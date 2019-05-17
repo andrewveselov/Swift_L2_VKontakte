@@ -5,6 +5,13 @@
 //  Created by Andrew Veselov on 15/05/2019.
 //  Copyright © 2019 Andrew Veselov. All rights reserved.
 //
+// Swift level 2 Lesson 1 2019-05-14
+// Homework
+// Andrew Veselov
+//
+// 1. Создать приложение.
+// 2. Добавить форму для входа.
+// 3. Адаптировать форму для телефонов в альбомной ориентации, планшетов.
 
 import UIKit
 
