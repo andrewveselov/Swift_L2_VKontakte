@@ -14,6 +14,10 @@
 		493D677B228BF68300F3CD9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 493D6779228BF68300F3CD9F /* LaunchScreen.storyboard */; };
 		493D6786228BF68300F3CD9F /* L2_VKontakteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493D6785228BF68300F3CD9F /* L2_VKontakteTests.swift */; };
 		493D6791228BF68300F3CD9F /* L2_VKontakteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493D6790228BF68300F3CD9F /* L2_VKontakteUITests.swift */; };
+		4954E3002292694200DB7A21 /* FriendsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4954E2FF2292694200DB7A21 /* FriendsListTableViewController.swift */; };
+		4954E30422926A3300DB7A21 /* PhotoFriendsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4954E30322926A3300DB7A21 /* PhotoFriendsCollectionViewController.swift */; };
+		4954E30622926B5200DB7A21 /* MyGroupsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4954E30522926B5200DB7A21 /* MyGroupsTableViewController.swift */; };
+		4954E30822926B8100DB7A21 /* GroupListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4954E30722926B8100DB7A21 /* GroupListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,7 @@
 /* Begin PBXFileReference section */
 		493D676D228BF68000F3CD9F /* L2_VKontakte.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = L2_VKontakte.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		493D6770228BF68000F3CD9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		493D6772228BF68000F3CD9F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		493D6772228BF68000F3CD9F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
 		493D6775228BF68000F3CD9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		493D6777228BF68300F3CD9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		493D677A228BF68300F3CD9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +51,10 @@
 		493D678C228BF68300F3CD9F /* L2_VKontakteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = L2_VKontakteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		493D6790228BF68300F3CD9F /* L2_VKontakteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L2_VKontakteUITests.swift; sourceTree = "<group>"; };
 		493D6792228BF68300F3CD9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4954E2FF2292694200DB7A21 /* FriendsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FriendsListTableViewController.swift; path = ../FriendsListTableViewController.swift; sourceTree = "<group>"; };
+		4954E30322926A3300DB7A21 /* PhotoFriendsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhotoFriendsCollectionViewController.swift; path = ../PhotoFriendsCollectionViewController.swift; sourceTree = "<group>"; };
+		4954E30522926B5200DB7A21 /* MyGroupsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyGroupsTableViewController.swift; path = ../MyGroupsTableViewController.swift; sourceTree = "<group>"; };
+		4954E30722926B8100DB7A21 /* GroupListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GroupListTableViewController.swift; path = ../GroupListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				493D6770228BF68000F3CD9F /* AppDelegate.swift */,
-				493D6772228BF68000F3CD9F /* ViewController.swift */,
+				4954E30922926BFD00DB7A21 /* Controllers */,
 				493D6774228BF68000F3CD9F /* Main.storyboard */,
 				493D6777228BF68300F3CD9F /* Assets.xcassets */,
 				493D6779228BF68300F3CD9F /* LaunchScreen.storyboard */,
@@ -123,6 +131,18 @@
 				493D6792228BF68300F3CD9F /* Info.plist */,
 			);
 			path = L2_VKontakteUITests;
+			sourceTree = "<group>";
+		};
+		4954E30922926BFD00DB7A21 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				493D6772228BF68000F3CD9F /* ViewController.swift */,
+				4954E2FF2292694200DB7A21 /* FriendsListTableViewController.swift */,
+				4954E30322926A3300DB7A21 /* PhotoFriendsCollectionViewController.swift */,
+				4954E30522926B5200DB7A21 /* MyGroupsTableViewController.swift */,
+				4954E30722926B8100DB7A21 /* GroupListTableViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +276,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4954E3002292694200DB7A21 /* FriendsListTableViewController.swift in Sources */,
+				4954E30422926A3300DB7A21 /* PhotoFriendsCollectionViewController.swift in Sources */,
+				4954E30622926B5200DB7A21 /* MyGroupsTableViewController.swift in Sources */,
+				4954E30822926B8100DB7A21 /* GroupListTableViewController.swift in Sources */,
 				493D6773228BF68000F3CD9F /* ViewController.swift in Sources */,
 				493D6771228BF68000F3CD9F /* AppDelegate.swift in Sources */,
 			);
