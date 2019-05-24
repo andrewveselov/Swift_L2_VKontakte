@@ -18,6 +18,12 @@
 		4954E30422926A3300DB7A21 /* PhotoFriendsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4954E30322926A3300DB7A21 /* PhotoFriendsCollectionViewController.swift */; };
 		4954E30622926B5200DB7A21 /* MyGroupsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4954E30522926B5200DB7A21 /* MyGroupsTableViewController.swift */; };
 		4954E30822926B8100DB7A21 /* GroupListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4954E30722926B8100DB7A21 /* GroupListTableViewController.swift */; };
+		498477672296B8910050D4B5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498477662296B8910050D4B5 /* User.swift */; };
+		498477692296B8AC0050D4B5 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498477682296B8AC0050D4B5 /* Group.swift */; };
+		499A135222962433003091ED /* FriendsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499A135122962433003091ED /* FriendsCell.swift */; };
+		499A13542296258E003091ED /* MyGroupsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499A13532296258E003091ED /* MyGroupsCell.swift */; };
+		499A1356229625CA003091ED /* GroupListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499A1355229625CA003091ED /* GroupListCell.swift */; };
+		499A13582296264C003091ED /* PhotoFriendsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499A13572296264C003091ED /* PhotoFriendsCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +61,12 @@
 		4954E30322926A3300DB7A21 /* PhotoFriendsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhotoFriendsCollectionViewController.swift; path = ../PhotoFriendsCollectionViewController.swift; sourceTree = "<group>"; };
 		4954E30522926B5200DB7A21 /* MyGroupsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyGroupsTableViewController.swift; path = ../MyGroupsTableViewController.swift; sourceTree = "<group>"; };
 		4954E30722926B8100DB7A21 /* GroupListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GroupListTableViewController.swift; path = ../GroupListTableViewController.swift; sourceTree = "<group>"; };
+		498477662296B8910050D4B5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		498477682296B8AC0050D4B5 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		499A135122962433003091ED /* FriendsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FriendsCell.swift; path = ../FriendsCell.swift; sourceTree = "<group>"; };
+		499A13532296258E003091ED /* MyGroupsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyGroupsCell.swift; path = ../MyGroupsCell.swift; sourceTree = "<group>"; };
+		499A1355229625CA003091ED /* GroupListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GroupListCell.swift; path = ../GroupListCell.swift; sourceTree = "<group>"; };
+		499A13572296264C003091ED /* PhotoFriendsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhotoFriendsCell.swift; path = ../PhotoFriendsCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,12 +117,14 @@
 		493D676F228BF68000F3CD9F /* L2_VKontakte */ = {
 			isa = PBXGroup;
 			children = (
+				49C7595F2296B76500EFDAD1 /* Model */,
 				493D6770228BF68000F3CD9F /* AppDelegate.swift */,
 				4954E30922926BFD00DB7A21 /* Controllers */,
 				493D6774228BF68000F3CD9F /* Main.storyboard */,
 				493D6777228BF68300F3CD9F /* Assets.xcassets */,
 				493D6779228BF68300F3CD9F /* LaunchScreen.storyboard */,
 				493D677C228BF68300F3CD9F /* Info.plist */,
+				499A1359229626D1003091ED /* Cells */,
 			);
 			path = L2_VKontakte;
 			sourceTree = "<group>";
@@ -143,6 +157,26 @@
 				4954E30722926B8100DB7A21 /* GroupListTableViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		499A1359229626D1003091ED /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				499A135122962433003091ED /* FriendsCell.swift */,
+				499A13532296258E003091ED /* MyGroupsCell.swift */,
+				499A1355229625CA003091ED /* GroupListCell.swift */,
+				499A13572296264C003091ED /* PhotoFriendsCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		49C7595F2296B76500EFDAD1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				498477662296B8910050D4B5 /* User.swift */,
+				498477682296B8AC0050D4B5 /* Group.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,9 +313,15 @@
 				4954E3002292694200DB7A21 /* FriendsListTableViewController.swift in Sources */,
 				4954E30422926A3300DB7A21 /* PhotoFriendsCollectionViewController.swift in Sources */,
 				4954E30622926B5200DB7A21 /* MyGroupsTableViewController.swift in Sources */,
+				498477692296B8AC0050D4B5 /* Group.swift in Sources */,
+				499A13542296258E003091ED /* MyGroupsCell.swift in Sources */,
 				4954E30822926B8100DB7A21 /* GroupListTableViewController.swift in Sources */,
 				493D6773228BF68000F3CD9F /* ViewController.swift in Sources */,
 				493D6771228BF68000F3CD9F /* AppDelegate.swift in Sources */,
+				499A1356229625CA003091ED /* GroupListCell.swift in Sources */,
+				499A13582296264C003091ED /* PhotoFriendsCell.swift in Sources */,
+				499A135222962433003091ED /* FriendsCell.swift in Sources */,
+				498477672296B8910050D4B5 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +497,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = L2_VKontakte/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -474,6 +515,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = L2_VKontakte/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
