@@ -23,9 +23,9 @@ import UIKit
 
 class GroupListTableViewController: UITableViewController {
     var groupList : [GroupModel] = [
-        GroupModel(name: "Любители есть", iconURL: "https://localhost"),
-        GroupModel(name: "Любители летать", iconURL: "https://localhost"),
-        GroupModel(name: "Любители спать", iconURL: "https://localhost")
+        GroupModel(name: "Любители пить", icon: UIImage(named: "drink")!),
+        GroupModel(name: "Любители петь", icon: UIImage(named: "music")!),
+        GroupModel(name: "Любители спать", icon: UIImage(named: "sleep")!)
     ]
 
     override func viewDidLoad() {
@@ -43,6 +43,7 @@ class GroupListTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: GroupListCell.reuseIdentifier, for: indexPath) as? GroupListCell else { return UITableViewCell() }
         cell.groupName.text = groupList[indexPath.row].name
+        cell.groupImageView.image = groupList[indexPath.row].icon
         return cell
     }
 

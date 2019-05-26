@@ -38,6 +38,7 @@ class MyGroupsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: MyGroupsCell.reuseIdentifier, for: indexPath) as? MyGroupsCell else { return UITableViewCell() }
         cell.groupName.text = myGroupList[indexPath.row].name
+        cell.groupImageView.image = myGroupList[indexPath.row].icon
         return cell
     }
 

@@ -6,7 +6,7 @@
 //  Copyright © 2019 Andrew Veselov. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 enum Gender {
     case male, female
@@ -15,11 +15,11 @@ enum Gender {
 struct UserModel {
     var name: String
     var gender: Gender
-    var avatarURL: String
+    var avatar: UIImage
 
-    init(name:String, gender:Gender, avatarURL:String) {
+    init(name: String, gender: Gender, avatar: UIImage) {
         self.name = name
         self.gender = gender
-        self.avatarURL = avatarURL
+        self.avatar = avatar
     }
 }

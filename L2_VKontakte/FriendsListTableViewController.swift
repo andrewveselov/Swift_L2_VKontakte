@@ -24,9 +24,9 @@ import UIKit
 class FriendsListTableViewController: UITableViewController {
     
     var friendsLocalUser : [UserModel] = [
-        UserModel(name: "Иван Исаев", gender: .male, avatarURL: "https://localhost"),
-        UserModel(name: "Кристина Петрова", gender: .female, avatarURL: "https://localhost"),
-        UserModel(name: "Алена", gender: .female, avatarURL: "https://localhost")
+        UserModel(name: "Иван Исаев", gender: .male, avatar: UIImage(named: "avatar1")!),
+        UserModel(name: "Кристина Петрова", gender: .female, avatar: UIImage(named: "avatar2")!),
+        UserModel(name: "Алена", gender: .female, avatar: UIImage(named: "avatar3")!)
     ]
     
     override func viewDidLoad() {
@@ -43,6 +43,7 @@ class FriendsListTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: FriendsCell.reuseIdentifier, for: indexPath) as? FriendsCell else { return UITableViewCell()}
             cell.friendName.text = friendsLocalUser[indexPath.row].name
+            cell.friendImageView.image = friendsLocalUser[indexPath.row].avatar
         return cell
     }
 }

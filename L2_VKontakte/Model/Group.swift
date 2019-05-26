@@ -6,16 +6,14 @@
 //  Copyright © 2019 Andrew Veselov. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct GroupModel {
     var name: String
-    var id: Int
-    var iconURL: String
+    var icon: UIImage
     
-    init(name:String, iconURL:String) {
+    init(name: String, icon: UIImage) {
         self.name = name
-        self.iconURL = iconURL
-        self.id = 1
+        self.icon = icon
     }
 }
