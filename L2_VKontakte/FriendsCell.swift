@@ -14,15 +14,33 @@ class FriendsCell: UITableViewCell {
     
     @IBOutlet weak var friendName: UILabel!
     @IBOutlet weak var friendImageView: UIImageView!
-    
+    @IBInspectable var shadowColor: UIColor? {
+        get {
+            return UIColor(cgColor: self.layer.shadowColor!)
+        }
+        set {
+            self.layer.shadowColor = newValue?.cgColor
+        }
+    }
+    @IBInspectable var shadowRadius: CGFloat {
+        get {
+            return self.layer.shadowRadius
+        }
+        set {
+            self.layer.shadowRadius = newValue
+        }
+    }
+
     override func awakeFromNib() {
         super.awakeFromNib()
     }
-/*
+
+    
+    /*
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
     }
-*/
+ */
 }
