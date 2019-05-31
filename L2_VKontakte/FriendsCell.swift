@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FriendsCell: UITableViewCell {
+@IBDesignable class FriendsCell: UITableViewCell {
 
     static let reuseIdentifier = "FriendsCell"
     
@@ -22,6 +22,8 @@ class FriendsCell: UITableViewCell {
             self.layer.shadowColor = newValue?.cgColor
         }
     }
+
+//    var shadowRadius: CGFloat = 2
     @IBInspectable var shadowRadius: CGFloat {
         get {
             return self.layer.shadowRadius
