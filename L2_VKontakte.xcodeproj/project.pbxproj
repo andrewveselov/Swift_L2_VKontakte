@@ -18,6 +18,8 @@
 		4954E30422926A3300DB7A21 /* PhotoFriendsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4954E30322926A3300DB7A21 /* PhotoFriendsCollectionViewController.swift */; };
 		4954E30622926B5200DB7A21 /* MyGroupsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4954E30522926B5200DB7A21 /* MyGroupsTableViewController.swift */; };
 		4954E30822926B8100DB7A21 /* GroupListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4954E30722926B8100DB7A21 /* GroupListTableViewController.swift */; };
+		496BFB22229ABF6700FDC985 /* GraphicsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 496BFB21229ABF6700FDC985 /* GraphicsStoryboard.storyboard */; };
+		496BFB24229AC0A000FDC985 /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496BFB23229AC0A000FDC985 /* CustomViewController.swift */; };
 		498477672296B8910050D4B5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498477662296B8910050D4B5 /* User.swift */; };
 		498477692296B8AC0050D4B5 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498477682296B8AC0050D4B5 /* Group.swift */; };
 		499A135222962433003091ED /* FriendsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499A135122962433003091ED /* FriendsCell.swift */; };
@@ -61,6 +63,8 @@
 		4954E30322926A3300DB7A21 /* PhotoFriendsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhotoFriendsCollectionViewController.swift; path = ../PhotoFriendsCollectionViewController.swift; sourceTree = "<group>"; };
 		4954E30522926B5200DB7A21 /* MyGroupsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyGroupsTableViewController.swift; path = ../MyGroupsTableViewController.swift; sourceTree = "<group>"; };
 		4954E30722926B8100DB7A21 /* GroupListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GroupListTableViewController.swift; path = ../GroupListTableViewController.swift; sourceTree = "<group>"; };
+		496BFB21229ABF6700FDC985 /* GraphicsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GraphicsStoryboard.storyboard; sourceTree = "<group>"; };
+		496BFB23229AC0A000FDC985 /* CustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
 		498477662296B8910050D4B5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		498477682296B8AC0050D4B5 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		499A135122962433003091ED /* FriendsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FriendsCell.swift; path = ../FriendsCell.swift; sourceTree = "<group>"; };
@@ -121,6 +125,8 @@
 				493D6770228BF68000F3CD9F /* AppDelegate.swift */,
 				4954E30922926BFD00DB7A21 /* Controllers */,
 				493D6774228BF68000F3CD9F /* Main.storyboard */,
+				496BFB23229AC0A000FDC985 /* CustomViewController.swift */,
+				496BFB21229ABF6700FDC985 /* GraphicsStoryboard.storyboard */,
 				493D6777228BF68300F3CD9F /* Assets.xcassets */,
 				493D6779228BF68300F3CD9F /* LaunchScreen.storyboard */,
 				493D677C228BF68300F3CD9F /* Info.plist */,
@@ -285,6 +291,7 @@
 			files = (
 				493D677B228BF68300F3CD9F /* LaunchScreen.storyboard in Resources */,
 				493D6778228BF68300F3CD9F /* Assets.xcassets in Resources */,
+				496BFB22229ABF6700FDC985 /* GraphicsStoryboard.storyboard in Resources */,
 				493D6776228BF68000F3CD9F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,6 +323,7 @@
 				498477692296B8AC0050D4B5 /* Group.swift in Sources */,
 				499A13542296258E003091ED /* MyGroupsCell.swift in Sources */,
 				4954E30822926B8100DB7A21 /* GroupListTableViewController.swift in Sources */,
+				496BFB24229AC0A000FDC985 /* CustomViewController.swift in Sources */,
 				493D6773228BF68000F3CD9F /* ViewController.swift in Sources */,
 				493D6771228BF68000F3CD9F /* AppDelegate.swift in Sources */,
 				499A1356229625CA003091ED /* GroupListCell.swift in Sources */,
@@ -499,6 +507,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = L2_VKontakte/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -517,6 +526,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = L2_VKontakte/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
