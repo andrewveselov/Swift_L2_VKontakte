@@ -111,6 +111,7 @@
                     <connections>
                         <segue destination="OmX-b4-HAe" kind="relationship" relationship="viewControllers" id="dZM-dn-yAD"/>
                         <segue destination="HGE-Xq-0Ru" kind="relationship" relationship="viewControllers" id="r5q-Zo-n5W"/>
+                        <segue destination="SYL-Lq-9iy" kind="relationship" relationship="viewControllers" id="qTr-WX-UYm"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8kr-4N-4e4" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -146,11 +147,11 @@
                                         </label>
                                     </subviews>
                                     <userDefinedRuntimeAttributes>
-                                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
-                                            <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </userDefinedRuntimeAttribute>
                                         <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
                                             <real key="value" value="2"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                            <color key="value" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
                                 </tableViewCellContentView>
@@ -159,7 +160,7 @@
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
-                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -286,6 +287,83 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yA0-DI-RBm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1731.8840579710147" y="359.59821428571428"/>
+        </scene>
+        <!--Лента-->
+        <scene sceneID="oJm-nH-RMp">
+            <objects>
+                <tableViewController id="qoF-8A-iR8" customClass="ListTableViewController" customModule="L2_VKontakte" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="9uu-5f-D7G">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListCell" rowHeight="140" id="z2c-B7-Iur" customClass="ListCell" customModule="L2_VKontakte" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="140"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="z2c-B7-Iur" id="qL8-Zc-gba">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="139.66666666666666"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ufz-L0-zcB">
+                                            <rect key="frame" x="64" y="11" width="295" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XR4-Hk-c2F">
+                                            <rect key="frame" x="5" y="0.0" width="43" height="43"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OV2-ww-DTQ">
+                                            <rect key="frame" x="6" y="51" width="388" height="37"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8SV-NO-NzQ" customClass="LikeButton" customModule="L2_VKontakte" customModuleProvider="target">
+                                            <rect key="frame" x="20" y="96" width="37" height="34"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </view>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="likeButton" destination="8SV-NO-NzQ" id="6gS-TS-5Od"/>
+                                    <outlet property="message" destination="OV2-ww-DTQ" id="5eb-EC-zQ9"/>
+                                    <outlet property="userImageView" destination="XR4-Hk-c2F" id="Xdb-1E-iEp"/>
+                                    <outlet property="userName" destination="ufz-L0-zcB" id="EWv-1q-jED"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="qoF-8A-iR8" id="9Pl-NX-JHK"/>
+                            <outlet property="delegate" destination="qoF-8A-iR8" id="YfK-d4-r6Z"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Лента" id="1RE-Hn-pt8"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="egW-lI-l2u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1731.8840579710147" y="1041.9642857142858"/>
+        </scene>
+        <!--Лента-->
+        <scene sceneID="7WL-yG-ley">
+            <objects>
+                <navigationController id="SYL-Lq-9iy" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Лента" id="WBY-90-I28"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="h8D-8h-sy6">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="qoF-8A-iR8" kind="relationship" relationship="rootViewController" id="z0H-1t-ebO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VBE-uc-Mdm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="909" y="1043"/>
         </scene>
         <!--Group List Table View Controller-->
         <scene sceneID="Mih-VR-84x">
